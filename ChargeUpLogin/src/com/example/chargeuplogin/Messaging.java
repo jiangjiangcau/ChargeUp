@@ -123,18 +123,8 @@ public class Messaging extends ActionBarActivity {
 			@Override
 			public void onClick(View v) {
 				// TODO Auto-generated method stub
-				new ProcessSendingMessage().execute();				
 			}
-		});		
-
-//		btn_getMessageButton.setOnClickListener(new View.OnClickListener() {
-//
-//			@Override
-//			public void onClick(View v) {
-//				// TODO Auto-generated method stub
-//				new ProcessGettingMessage().execute();				
-//			}
-//		});
+		});
 		
 		
 		timer = new Timer();
