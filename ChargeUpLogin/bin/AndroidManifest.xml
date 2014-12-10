@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.chargeuplogin"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="21" />
+
+    <!-- Allow to connect with Internet and to know the current network state -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <!-- android:theme="@style/AppTheme" -->
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <meta-data 
+            android:name="com.google.android.gms.version" 
+            android:value="@integer/google_play_services_version"/>
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".RegisterActivity"
+            android:label="@string/title_activity_register" >
+        </activity>
+        <activity
+            android:name=".RegisteredActivity"
+            android:label="@string/title_activity_registered" >
+        </activity>
+        <activity
+            android:name=".LoginActivity"
+            android:label="@string/title_activity_login" >
+        </activity>
+        <activity
+            android:name=".UpdateinfoActivity"
+            android:label="@string/title_activity_updateinfo" >
+        </activity>
+        <activity
+            android:name=".ResetpasswordActivity"
+            android:label="@string/title_activity_resetpassword" >
+        </activity>
+        <activity
+            android:name=".RegisterChargerActivity"
+            android:label="@string/title_activity_register_charger" >
+        </activity>
+        <activity
+            android:name=".DeleteChargerActivity"
+            android:label="@string/title_activity_delete_charger" >
+        </activity>
+        <activity
+            android:name=".ChangepasswordActivity"
+            android:label="@string/title_activity_changepassword" >
+        </activity>
+        <activity
+            android:name=".AddAvailableChargerActivity"
+            android:label="@string/title_activity_add_available_charger" >
+        </activity>
+        <activity
+            android:name=".RemoveAvailableChargerActivity"
+            android:label="@string/title_activity_remove_available_charger" >
+        </activity>
+        <activity
+            android:name=".Messaging"
+            android:label="@string/title_activity_messaging" >
+        </activity>
+        <activity
+            android:name=".FindAChargerActivity"
+            android:label="@string/title_activity_find_acharger" >
+        </activity>
+        <activity
+            android:name=".ConfirmLendingActivity"
+            android:label="@string/title_activity_confirm_lending" >
+        </activity>
+        <activity
+            android:name=".ChargeUpFragment"
+            android:label="@string/title_activity_charge_up_fragment" >
+        </activity>
+        <activity
+            android:name=".HistoryFragment"
+            android:label="@string/title_activity_history_fragment" >
+        </activity>
+        <activity
+            android:name=".MyDevicesFragment"
+            android:label="@string/title_activity_my_devices_fragment" >
+        </activity>
+        <activity
+            android:name=".Login2Activity"
+            android:label="@string/title_activity_login2" >
+        </activity>
+        <activity
+            android:name=".WelcomeActivity"
+            android:label="@string/title_activity_welcome" >
+        </activity>
+        
+           
+                <activity android:name="com.google.android.gms.ads.AdActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+            android:theme="@android:style/Theme.Translucent" />
+    </application>
+
+</manifest>

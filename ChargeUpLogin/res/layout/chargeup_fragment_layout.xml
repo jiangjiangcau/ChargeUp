@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textView_Welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="170dp"
+        
+        android:text="Welcome!"
+        android:textColor="#ffffff" />
+    
+    <ImageButton
+        android:id="@+id/imageButton1"
+        android:layout_width="wrap_content"
+        android:layout_height="1000dp"
+        android:layout_alignParentTop="true"
+        android:clickable="true"
+        android:onClick="chargeUpOnClick"
+        android:layout_centerHorizontal="true"
+        android:background="@android:color/transparent"
+        android:src="@drawable/chargeuplogotransparentbackgroundinvertedburned" />
+
+    <TextView
+        android:id="@+id/textView_FindMeACharger"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="138dp"
+        android:text="Find me a charger!"
+        android:textColor="#FFFFFF" />
+
+</RelativeLayout>
+
+
